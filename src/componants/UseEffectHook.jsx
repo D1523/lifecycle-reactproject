@@ -55,12 +55,12 @@ const UseEffectHook = () => {
   //   }, []) //? Dependecny array bos
 
   //!   ComponentDidUpdate
-  //   useEffect(() => {
+   useEffect(() => {
   //     console.log("componentDidMount + componentDidUpdate")
-  //     setTimeout(() => {
-  //       alert("Data fetched")
-  //     }, 3000)
-  //   }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
+       setTimeout(() => {
+         alert("Data fetched")
+       }, 3000)
+     }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
 
   //! ComponentWillUnmount
   const fetchData = () => {
