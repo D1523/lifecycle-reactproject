@@ -3,6 +3,7 @@ import LifeCycleMethods from './componants/LifeCycleMethods';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useState} from "react"
 import UseEffectHook from './componants/UseEffectHook';
+import User from './componants/User';
 function App() {
 const [visible, setVisible]=useState(true)
 const [visible2, setVisible2]=useState(true)
@@ -13,6 +14,7 @@ const [visible2, setVisible2]=useState(true)
 
      <button className="btn btn-success" onClick={()=>setVisible2(!visible2)}>Show/Hide</button>
      {visible2 && <UseEffectHook/>}
+    <User/>
     </div>
   );
 }

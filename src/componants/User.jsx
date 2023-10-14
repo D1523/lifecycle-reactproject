@@ -13,10 +13,10 @@ const User = () => {
   }
 
   useEffect(() => {
-    // fetch("https://randomuser.me/api")
-    //   .then((res) => res.json())
-    //   .then((data) => setUserData(data.results[0]))
-    //   .catch((err) => console.log(err))
+    fetch("https://randomuser.me/api")
+    .then((res) => res.json())
+     .then((data) => setUserData(data.results[0]))
+    .catch((err) => console.log(err))
     //! ComponentDidMount
     const timer = setInterval(getUser, 3000)
     getUser()
